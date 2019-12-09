@@ -1,0 +1,13 @@
+<ul> 
+    <p>
+        <a href="add/">Add a new sighting!</a>
+    </p>
+    <p>
+        {% for sighting in sightings %}
+        <li>
+            {{ sighting.Unique_Squirrel_ID }}
+            <a href="{{ sighting.Unique_Squirrel_ID }}/">edit</a>
+        </li>
+        {% endfor %}
+    </p>
+</ul>

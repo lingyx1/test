@@ -1,0 +1,14 @@
+<ul>
+    <p>
+    <a>stats about squirrels in Central Park</a>
+    <p>
+    <a>the following stats stand for the numbers of adult squirrels, gray squirrels, climbing squirrels, running squirrels and chasing squirrels.</a>
+    </p>
+    <p>
+        {% for item in count %}
+        <li>
+	<a> {{ item }}</a>
+        </li>
+        {% endfor %}
+    </p>
+</ul>
